@@ -26,12 +26,12 @@ Route::group([
 ],
 function ($router) {
 
-    Route::post('login', 'App\Http\Controllers\AuthController@login');
-    Route::post('logout', 'App\Http\Controllers\AuthController@logout');
-    Route::post('refresh', 'AuthCoApp\Http\Controllers\AuthControllerntroller@refresh');
-    Route::post('me', 'App\Http\Controllers\AuthController@me');
-    Route::post('register', 'App\Http\Controllers\AuthController@register');
-    Route::get('filters', 'App\Http\Controllers\FilterController@index');
+    Route::post('accounts/login', 'App\Http\Controllers\AuthController@login');
+    Route::post('accounts/logout', 'App\Http\Controllers\AuthController@logout');
+    Route::post('accounts/refresh', 'AuthCoApp\Http\Controllers\AuthControllerntroller@refresh');
+    Route::post('accounts/me', 'App\Http\Controllers\AuthController@me');
+    Route::post('accounts/register', 'App\Http\Controllers\AuthController@register');
+    Route::get('gift/initialfilter', 'App\Http\Controllers\FilterController@index');
     Route::get('filter/{filter}', 'App\Http\Controllers\FilterController@getGiftByFilter');
 });
 
