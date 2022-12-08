@@ -1,0 +1,9 @@
+/node_modules
+/storage/*.key
+/vendor
+/.idea
+/.vscode
+/.vagrant
+/storage
+.env
+.env.testing
